@@ -9,4 +9,13 @@
         <button (click)="GreetClick()">Click</button>
         <input type="text" value="{{greet}}">
     </li>
+    <li style="padding-bottom: 10px;">
+        Sample 12: Variable/Template reference. Getting data from HTML DOM using variable<br/>
+        <button (click)="GetClick(sampleInput.value)">Click</button>
+        <input type="text" #sampleInput>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 13: 2 way bindings<br/>
+        <input type="text" [(ngModel)]="inputData"> {{inputData}}
+    </li>
 </ul>

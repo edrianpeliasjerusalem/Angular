@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { Console } from 'console';
 
 @Component({
   selector: 'app-event-bindings',
@@ -9,6 +10,7 @@ export class EventBindingsComponent implements OnInit {
 
   public clickValue = "";
   public greet = "";
+  public inputData = "";
 
   constructor() { }
 
@@ -18,5 +20,10 @@ export class EventBindingsComponent implements OnInit {
   GreetClick()  {
     this.greet = "Welcome!";
   }
+
+  GetClick(input)  {
+    console.log(input)
+  }
+
 
 }
