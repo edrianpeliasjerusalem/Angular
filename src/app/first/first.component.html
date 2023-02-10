@@ -1,1 +1,40 @@
-<p>first works!</p>
+<ul>
+    <li style="padding-bottom: 10px;">
+        Sample 1:
+        <div id="{{id}}">Binding Id using interpolation</div>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 2: This is disabled using property binding <br/>
+        <input type="text" [disabled]="isDisabled" 
+        value="Sample 2">
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 3: This is disabled using property binding -binding <br/>
+        <input type="text" bind-disabled="isDisabled" 
+        value="Sample 3">
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 4: Css Class bindings <br/>
+        <h3 [class]="successClass">Sample 4</h3>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 5: Conditional Css Class bindings - single class <br/>
+        <h3 [class.text-danger]="isError">Sample 5</h3>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 6: Conditional Css Class bindings - multiple class <br/>
+        <h3 [ngClass]="errorMsg" >Sample 6</h3>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 7: Style bindings <br/>
+        <h3 [style.color]="'blue'" >Sample 7</h3>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 8: Conditional Style bindings <br/>
+        <h3 [style.color]="isError?'red':'black'" >Sample 8</h3>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 9: Multiple Style bindings <br/>
+        <h3 [ngStyle]="titleStyle" >Sample 9</h3>
+    </li>    
+</ul>
