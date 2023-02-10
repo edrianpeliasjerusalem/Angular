@@ -7,6 +7,9 @@ import { Component, OnInit } from '@angular/core';
 })
 export class FirstComponent implements OnInit {
 
+  public id = "lblName"
+  public isDisabled = true;
+
   constructor() { }
 
   ngOnInit() {

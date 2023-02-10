@@ -1,1 +1,16 @@
-<p>first works!</p>
+<ul>
+    <li style="padding-bottom: 10px;">
+        Sample 1:
+        <div id="{{id}}">Binding Id using interpolation</div>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 2: This is disabled using property binding <br/>
+        <input type="text" [disabled]="isDisabled" 
+        value="Sample 2">
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 3: This is disabled using property binding -binding <br/>
+        <input type="text" bind-disabled="isDisabled" 
+        value="Sample 3">
+    </li>
+</ul>
