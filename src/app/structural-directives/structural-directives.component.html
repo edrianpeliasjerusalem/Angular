@@ -1,0 +1,39 @@
+<ul>
+    <li style="padding-bottom: 10px;">
+        Sample 14: NgIF - Inline<br/>
+       <div>
+        <h3 *ngIf="true">Sample 14 then</h3>
+       </div>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 15: NgIF - with Else<br/>
+       <div>
+        <h3 *ngIf="false; else elseSample">Sample 15 then</h3>
+       </div>
+       <ng-template #elseSample>
+        <h3>Else block</h3>
+       </ng-template>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 16: NgIF - using code block<br/>
+       <div>
+        <h3 *ngIf="true; then  thenBlock; else elseSample">Replace this</h3>
+       </div>
+
+       <ng-template #thenBlock>
+        <h3>Then block</h3>
+       </ng-template>
+       <ng-template #elseSample>
+        <h3>Else block</h3>
+       </ng-template>
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 17: NgSwitchk<br/>
+       <div [ngSwitch]="color">
+        <div *ngSwitchCase="'red'">You selected Red</div>
+        <div *ngSwitchCase="'blue'">You selected Blue</div>
+        <div *ngSwitchDefault>You selected none</div>
+       </div>
+ 
+    </li>
+</ul>
