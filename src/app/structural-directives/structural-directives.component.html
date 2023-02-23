@@ -28,12 +28,17 @@
        </ng-template>
     </li>
     <li style="padding-bottom: 10px;">
-        Sample 17: NgSwitchk<br/>
+        Sample 17: NgSwitch<br/>
        <div [ngSwitch]="color">
         <div *ngSwitchCase="'red'">You selected Red</div>
         <div *ngSwitchCase="'blue'">You selected Blue</div>
         <div *ngSwitchDefault>You selected none</div>
        </div>
- 
+    </li>
+    <li style="padding-bottom: 10px;">
+        Sample 18: NgFor<br/>
+       <div *ngFor="let col of colors; index as i; first as f; last as l; even as e; odd as o">
+        <h4>{{i}} {{f}} {{l}} {{e}} {{o}} {{col}}</h4>
+       </div>
     </li>
 </ul>
