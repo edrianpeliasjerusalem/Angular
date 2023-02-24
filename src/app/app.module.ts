@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { FirstComponent } from './first/first.component';
 import { EventBindingsComponent } from './event-bindings/event-bindings.component';
 import { FormsModule } from '@angular/forms';
+import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
-    EventBindingsComponent
+    EventBindingsComponent,
+    StructuralDirectivesComponent
   ],
   imports: [
     BrowserModule,
