@@ -7,13 +7,15 @@ import { FirstComponent } from './first/first.component';
 import { EventBindingsComponent } from './event-bindings/event-bindings.component';
 import { FormsModule } from '@angular/forms';
 import { StructuralDirectivesComponent } from './structural-directives/structural-directives.component';
+import { ComponentInteractionComponent } from './component-interaction/component-interaction.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     FirstComponent,
     EventBindingsComponent,
-    StructuralDirectivesComponent
+    StructuralDirectivesComponent,
+    ComponentInteractionComponent,
   ],
   imports: [
     BrowserModule,

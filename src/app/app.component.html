@@ -351,6 +351,9 @@
   <app-first></app-first>
   <app-event-bindings></app-event-bindings>
   <app-structural-directives></app-structural-directives>
+
+  <app-component-interaction (childEvent)="childMessage=$event" fromParentTitle={{title}}></app-component-interaction>
+  <div>this is parent label. this msg is from child: {{childMessage}}</div>
 </div>
 
 <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * -->
